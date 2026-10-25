@@ -1,0 +1,28 @@
+:root{color-scheme:light dark;--bg:#f5faf7;--card:#fff;--fg:#0f1a15;--muted:#5b6861;--line:#dbe6e0;--accent:#0b7a4d;--accent-soft:#e3f5ec}
+@media (prefers-color-scheme:dark){:root{--bg:#050706;--card:#101311;--fg:#f5f7f5;--muted:#a3aaa6;--line:#282d2a;--accent:#38d996;--accent-soft:#0b251a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.7 Poppins,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:28px 16px 56px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:1.05rem;color:var(--fg);text-decoration:none;letter-spacing:.01em}
+.brand::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--accent-soft)}
+main{background:var(--card);border:1px solid var(--line);border-radius:20px;margin-top:24px;padding:36px 32px 40px}
+h1{font-size:1.9rem;font-weight:600;line-height:1.25;letter-spacing:-.01em;margin:0 0 10px}
+h2{font-size:1.05rem;font-weight:600;margin:36px 0 8px;padding-top:24px;border-top:1px solid var(--line);color:var(--accent)}
+.updated{display:inline-block;margin:0 0 24px;padding:3px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.8rem;font-weight:500}
+p,li{color:var(--fg)}
+p{margin:0 0 12px}
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+ul,ol{padding-left:1.3em;margin:0 0 12px}
+li{margin:4px 0}
+li::marker{color:var(--accent)}
+footer{margin-top:28px;text-align:center;color:var(--muted);font-size:.85rem}
+footer a{color:var(--muted);margin:0 8px}
+footer a:hover{color:var(--accent)}
+.lead{font-size:1.1rem;color:var(--muted);margin:0 0 28px}
+.cards{display:grid;gap:12px;margin-top:8px}
+.card{display:block;padding:16px 18px;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--fg);transition:border-color .15s}
+.card:hover{border-color:var(--accent)}
+.card strong{display:block;font-weight:600}
+.card span{color:var(--muted);font-size:.9rem}
+@media (max-width:520px){main{padding:26px 20px 30px;border-radius:16px}h1{font-size:1.6rem}}
