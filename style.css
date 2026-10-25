@@ -26,3 +26,4 @@ footer a:hover{color:var(--accent)}
 .card strong{display:block;font-weight:600}
 .card span{color:var(--muted);font-size:.9rem}
 @media (max-width:520px){main{padding:26px 20px 30px;border-radius:16px}h1{font-size:1.6rem}}
+.tag{display:inline-block;vertical-align:middle;margin-left:6px;padding:2px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:.75rem;font-weight:500;letter-spacing:.02em}
